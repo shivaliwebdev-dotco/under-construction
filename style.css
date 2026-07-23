@@ -1,0 +1,744 @@
+/* ==========================================
+   GOOGLE FONTS
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(214, 41, 41, 0.55),
+    rgba(88, 41, 41, 0.55)),
+    url("images/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    color:#fff;
+
+    overflow-x:hidden;
+}
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:50px 20px;
+
+}
+
+/* ==========================================
+   GLASS CARD
+========================================== */
+
+.glass-card{
+
+    width:100%;
+    max-width:850px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    border-radius:30px;
+
+    text-align:center;
+
+    padding:45px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+    animation:fadeUp 1.2s ease;
+
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo{
+
+    width:110px;
+
+    height:110px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+   background:#FFF8F0;
+color:#C97B36;
+
+    font-size:55px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+
+    animation:bounceLogo 3s infinite;
+
+}
+
+/* ==========================================
+   HEADING
+========================================== */
+
+h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:5.5rem;
+
+    color:#a90a0a;
+
+    margin:15px 0 25px;
+
+}
+
+.badge{
+
+    display:inline-block;
+
+    margin-top:18px;
+
+    background:#910804;
+
+    color:white;
+
+    padding:10px 24px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+
+}
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.description{
+
+    margin:30px auto;
+
+    max-width:700px;
+
+    line-height:1.9;
+
+    font-size:17px;
+
+    color:#fafafa;
+
+}
+
+/* ==========================================
+   COUNTDOWN
+========================================== */
+
+.countdown{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+    margin-top:40px;
+
+}
+
+.box{
+
+    background:rgba(255,248,240,.18);
+
+    border-radius:20px;
+
+    padding:22px;
+
+    transition:.4s;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+
+}
+
+.box:hover{
+
+    transform:translateY(-8px);
+
+    background:rgba(255,255,255,.25);
+
+}
+
+.box h2{
+
+    font-size:2.6rem;
+
+    color:#FFD54F;
+
+}
+
+.box small{
+
+    font-size:16px;
+
+    letter-spacing:1px;
+
+}
+
+/* ==========================================
+   FLOATING EMOJIS
+========================================== */
+
+.floating{
+
+    position:fixed;
+
+    font-size:50px;
+
+    animation:float 8s infinite ease-in-out;
+
+    z-index:1;
+
+    opacity:.9;
+
+}
+/*=========================================
+        FLOATING IMAGE POSITIONS
+=========================================*/
+
+
+
+.one{
+
+    top:10%;
+    left:6%;
+
+}
+
+.two{
+
+    top:18%;
+    right:10%;
+
+    animation-delay:1s;
+
+}
+
+.three{
+
+    bottom:12%;
+    left:8%;
+
+    animation-delay:2s;
+
+}
+
+.four{
+
+    bottom:10%;
+    right:8%;
+
+    animation-delay:3s;
+
+}
+
+.five{
+
+    top:50%;
+    right:4%;
+
+    animation-delay:4s;
+
+}
+
+.six{
+    top: 45%;
+    left: 9% ;
+    animation-delay:5s;
+}
+
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-25px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes bounceLogo{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+}
+
+/*=========================================
+        DESSERT ITEMS
+=========================================*/
+
+.desserts{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,220px);
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-top:40px;
+
+}
+
+.item{
+
+    background:rgba(255,248,240,.18);
+
+    border-radius:20px;
+
+    padding:20px;
+
+    font-size:42px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+.item img{
+
+    width:110px;
+
+    height:110px;
+
+    object-fit:contain;
+
+    margin-bottom:15px;
+
+}
+
+.item:hover img{
+
+    transform:scale(1.15) rotate(8deg);
+
+}
+
+.item:hover{
+
+    transform:translateY(-8px) scale(1.05);
+
+    background:rgba(255,248,240,.18);
+
+}
+
+.item span{
+
+    display:block;
+
+    margin-top:10px;
+
+    font-size:15px;
+
+    color:#ffffff;
+
+    font-weight:600;
+
+}
+
+/*=========================================
+        NEWSLETTER
+=========================================*/
+
+.newsletter{
+
+    margin-top:50px;
+
+}
+
+.newsletter h3{
+
+    margin-bottom:20px;
+
+    font-size:28px;
+
+    color:#F4C542;
+
+}
+
+#subscribeForm{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+#subscribeForm input{
+
+    width:100%;
+
+    padding:16px 20px;
+
+    border:none;
+
+    border-radius:50px;
+
+    font-size:16px;
+
+    outline:none;
+
+    background:rgba(255,255,255,.92);
+
+    color:#333;
+
+}
+
+#subscribeForm input:focus{
+
+    box-shadow:0 0 15px #F4C542;
+
+}
+
+#subscribeForm button{
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:linear-gradient(135deg,#C97B36,#F4C542);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+#subscribeForm button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.35);
+    background:#3E2723;
+    color:#FFF8F0;
+
+}
+
+#message{
+
+    margin-top:18px;
+
+    font-weight:600;
+
+    font-size:16px;
+
+}
+
+/*=========================================
+        SOCIAL MEDIA
+=========================================*/
+
+.social{
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.social a{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.18);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    font-size:22px;
+
+    transition:.4s;
+
+}
+
+.social a:hover{
+
+    background:#C97B36;
+    color:#FFF8F0;
+
+    transform:translateY(-8px) rotate(360deg);
+
+}
+
+/*=========================================
+        FOOTER
+=========================================*/
+
+footer{
+
+   background:#2E1A12;
+
+    color:#ffffff;
+
+    text-align:center;
+
+    padding:25px 15px;
+
+    font-size:15px;
+
+    letter-spacing:.5px;
+
+}
+
+/*=========================================
+        BACK TO TOP BUTTON
+=========================================*/
+
+#topBtn{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#C97B36;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    display:none;
+
+    transition:.4s;
+
+    z-index:999;
+
+}
+
+#topBtn:hover{
+
+    background:#F4C542;
+color:#2E1A12;
+
+    transform:scale(1.15);
+
+}
+
+/*=========================================
+        RESPONSIVE TABLET
+=========================================*/
+
+@media(max-width:900px){
+
+    .glass-card{
+
+        padding:35px;
+
+    }
+
+    .countdown{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .desserts{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    h1{
+
+        font-size:2.7rem;
+
+    }
+
+}
+
+/*=========================================
+        RESPONSIVE MOBILE
+=========================================*/
+
+@media(max-width:600px){
+
+    .glass-card{
+
+        padding:25px;
+
+    }
+
+    h1{
+
+        font-size:2.2rem;
+
+    }
+
+    .description{
+
+        font-size:15px;
+
+    }
+
+    .countdown{
+
+        grid-template-columns:1fr;
+
+        gap:15px;
+
+    }
+
+    .desserts{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .logo{
+
+        width:90px;
+
+        height:90px;
+
+        font-size:45px;
+
+    }
+
+    .social{
+
+        flex-wrap:wrap;
+
+    }
+
+    .floating{
+
+        font-size:28px;
+
+    }
+
+    footer{
+
+        font-size:14px;
+
+        line-height:1.8;
+
+    }
+
+}
